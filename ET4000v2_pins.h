@@ -24,14 +24,13 @@
 #define XDIR                            21 // PC5, checked.
 
 /* Y axis */
-#define YSTEP                           22 // PC6, checked. 
+#define YSTEP                           22 // PC6, checked.
 #define YDIR                            23 // PC7, checked.
 
-
 /* Z axis */
-// #define ZSTEP                        17 // PC1, collides with J1_SCL
-// #define ZDIR                         16 // PC0, collides with J1_SDA
-// #define ZENABLE                      10 // PD2, collides with J1_RX1, active low
+#define ZSTEP                           3  // PB3, checked.
+#define ZDIR                            2  // PB2, checked.
+#define ZENABLE                         A5 // PA5, active low
 
 /* Port E, extruder */
 // #define ESTEP                        13 // PD5, WRONG, this is BEDHEATER
