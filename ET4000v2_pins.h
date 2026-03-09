@@ -16,8 +16,8 @@
  *     Port: COM5                <- change here!
  ******************************************************************************/
 
-// NOTE: enable is shared, X and Y
-#define XYENABLE                        14 // PD6, checked, active low
+// NOTE: X,Y,E enable is shared
+#define XYE_ENABLE                      14 // PD6, checked, active low
 
 /* X axis, checked. */
 #define XSTEP                           15 // PD7, checked.
@@ -33,9 +33,9 @@
 #define ZENABLE                         A5 // PA5, active low
 
 /* Port E, extruder */
-// #define ESTEP                        13 // PD5, WRONG, this is BEDHEATER
-// #define EDIR                         12 // PD4, WRONG, this is HOTEND
-// #define EENABLE                      11 // PD3, collides with J1_TX1, active low
+#define ESTEP                           1  // PB1, checked.
+#define EDIR                            0  // PB0, checked.
+
 
 /* End switches, in fw as min pos switches.
  * 1. VCC
