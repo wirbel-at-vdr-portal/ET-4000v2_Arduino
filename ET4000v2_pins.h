@@ -86,5 +86,14 @@
 #define J1_A1                           A1  // PA1, J1/1 , A1  , checked.
 
 /***** SDCARD ****/
-// not yet known.
+                                            //      SD/1, GND
+                                            //      SD/2, nc
+#define SD_MISO                         6   // PB6, SD/3, MISO, checked.
+                                            //      SD/4, GND
+#define SD_SCK                          7   //      SD/5, 74HC4050/6 <- 74HC4050/6 <- PB7 SCK
+                                            //      SD/6, 3V3
+#define SD_MOSI                         5   //      SD/7, 74HC4050/4 <- 74HC4050/5 <- PB5 MOSI
+#define SD_ENABLE                       A0  //      SD/8, 74HC4050/2 <- 74HC4050/3 <- PA0 
+                                            //      SD/9, nc
+
 
