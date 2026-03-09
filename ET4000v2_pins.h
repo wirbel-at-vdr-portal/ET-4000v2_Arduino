@@ -16,16 +16,17 @@
  *     Port: COM5                <- change here!
  ******************************************************************************/
 
+// NOTE: enable is shared, X and Y
+#define XYENABLE                        14 // PD6, checked, active low
+
 /* X axis, checked. */
-// NOTE: XENABLE might be shared w. other axis, tbd. 
 #define XSTEP                           15 // PD7, checked.
 #define XDIR                            21 // PC5, checked.
-#define XENABLE                         14 // PD6, checked, active low
 
 /* Y axis */
-// #define YSTEP                        20 // PC4, WRONG - collides with end switches
-// #define YDIR                         19 // PC3, WRONG - collides with end switches
-// #define YENABLE                      18 // PC2, WRONG - collides with end switches, active low
+#define YSTEP                           22 // PC6, checked. 
+#define YDIR                            23 // PC7, checked.
+
 
 /* Z axis */
 // #define ZSTEP                        17 // PC1, collides with J1_SCL
